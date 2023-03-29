@@ -1,0 +1,3 @@
+---
+nagios_admin_user: nagiosadmin
+nagios_admin_password: mysecretpassword

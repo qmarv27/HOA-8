@@ -1,0 +1,12 @@
+---
+- name: Install Nagios in Ubuntu
+  apt:
+    name: nagios3
+    state: present
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install Nagios in CentOS
+  yum:
+    name: nagios
+    state: present
+  when: ansible_distribution == "CentOS"
